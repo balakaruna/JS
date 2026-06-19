@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+
+    <div class="logo">
+      <h1>Fashion Store</h1>
+    </div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#men">Men</a>
+      <a href="#women">Women</a>
+      <a href="#jewelry">Jewelry</a>
+      <a href="#products">Products</a>
+      <a href="#footer">Contact</a>
+    </nav>
+
+    <div class="cart" id="cart-btn">
+      🛒 Cart (<span id="cart-count">0</span>)
+    </div>
+
+  </header>
+
+  <!-- Cart Sidebar -->
+  <aside class="cart-sidebar" id="cart-sidebar">
+
+    <div class="cart-header">
+      <h2>Shopping Cart</h2>
+      <button id="close-cart">✖</button>
+    </div>
+
+    <div id="cart-items"></div>
+
+    <div class="cart-footer">
+      <h3>Total : ₹<span id="total-price">0</span></h3>
+    </div>
+
+  </aside>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+
+    <div class="hero-content">
+      <h1>New Fashion Collection 2026</h1>
+      <p>Discover Trending Styles For Men And Women</p>
+      <button id="shop-btn">Shop Now</button>
+    </div>
+
+  </section>
+
+  <!-- Search -->
+  <section class="search-section">
+    <input
+      type="text"
+      id="search"
+      placeholder="Search Products..."
+    >
+  </section>
+
+  <!-- Men's Fashion -->
+  <section class="section" id="men">
+
+    <h2>Men's Fashion</h2>
+
+    <div class="gallery">
+
+      <div class="box">
+        <img src="https://picsum.photos/300/350?random=1" alt="Casual Shirt">
+        <h3>Casual Shirt</h3>
+        <p>₹999</p>
+        <button class="add-cart"
+          data-name="Casual Shirt"
+          data-price="999"
+          data-image="https://picsum.photos/300/350?random=1">
+          Add To Cart
+        </button>
+      </div>
+
+      <div class="box">
+        <img src="https://picsum.photos/300/350?random=2" alt="Formal Shirt">
+        <h3>Formal Shirt</h3>
+        <p>₹1299</p>
+        <button class="add-cart"
+          data-name="Formal Shirt"
+          data-price="1299"
+          data-image="https://picsum.photos/300/350?random=2">
+          Add To Cart
+        </button>
+      </div>
+
+      <div class="box">
+        <img src="https://picsum.photos/300/350?random=3" alt="T-Shirt">
+        <h3>T-Shirt</h3>
+        <p>₹799</p>
+        <button class="add-cart"
+          data-name="T-Shirt"
+          data-price="799"
+          data-image="https://picsum.photos/300/350?random=3">
+          Add To Cart
+        </button>
+      </div>
+
+      <div class="box">
+        <img src="https://picsum.photos/300/350?random=4" alt="Jeans">
+        <h3>Jeans</h3>
+        <p>₹1499</p>
+        <button class="add-cart"
+          data-name="Jeans"
+          data-price="1499"
+          data-image="https://picsum.photos/300/350?random=4">
+          Add To Cart
+        </button>
+      </div>
+
+      <div class="box">
+        <img src="https://picsum.photos/300/350?random=5" alt="Hoodie">
+        <h3>Hoodie</h3>
+        <p>₹1699</p>
+        <button class="add-cart"
+          data-name="Hoodie"
+          data-price="1699"
+          data-image="https://picsum.photos/300/350?random=5">
+          Add To Cart
+        </button>
+      </div>
+
+      <div class="box">
+        <img src="https://picsum.photos/300/350?random=6" alt="Jacket">
+        <h3>Jacket</h3>
+        <p>₹1999</p>
+        <button class="add-cart"
+          data-name="Jacket"
+          data-price="1999"
+          data-image="https://picsum.photos/300/350?random=6">
+          Add To Cart
+        </button>
+      </div>
+
+    </div>
+
+  </section>
+    <!-- Women's Fashion -->
+  <section class="section" id="women">
+
+    <h2>Women's Fashion</h2>
+
+    <div class="gallery">
+
+      <div class="box">
+        <img src="https://picsum.photos/300/350?random=7" alt="Party Dress">
+        <h3>Party Dress</h3>
+        <p>₹2499</p>
+        <button class="add-cart"
+          data-name="Party Dress"
+          data-price="2499"
+          data-image="https://picsum.photos/300/350?random=7">
+          Add To Cart
+        </button>
+      </div>
+
+      <div class="box">
+        <img src="https://picsum.photos/300/350?random=8" alt="Long Dress">
+        <h3>Long Dress</h3>
+        <p>₹2199</p>
+        <button class="add-cart"
+          data-name="Long Dress"
+          data-price="2199"
+          data-image="https://picsum.photos/300/350?random=8">
+          Add To Cart
+        </button>
+      </div>
+
+      <div class="box">
+        <img src="https://picsum.photos/300/350?random=9" alt="Casual Dress">
+        <h3>Casual Dress</h3>
+        <p>₹1899</p>
+        <button class="add-cart"
+          data-name="Casual Dress"
+          data-price="1899"
+          data-image="https://picsum.photos/300/350?random=9">
+          Add To Cart
+        </button>
+      </div>
+
+      <div class="box">
+        <img src="https://picsum.photos/300/350?random=10" alt="Ethnic Wear">
+        <h3>Ethnic Wear</h3>
+        <p>₹2799</p>
+        <button class="add-cart"
+          data-name="Ethnic Wear"
+          data-price="2799"
+          data-image="https://picsum.photos/300/350?random=10">
+          Add To Cart
+        </button>
+      </div>
+
+      <div class="box">
+        <img src="https://picsum.photos/300/350?random=11" alt="Hand Bag">
+        <h3>Hand Bag</h3>
+        <p>₹1599</p>
+        <button class="add-cart"
+          data-name="Hand Bag"
+          data-price="1599"
+          data-image="https://picsum.photos/300/350?random=11">
+          Add To Cart
+        </button>
+      </div>
+
+      <div class="box">
+        <img src="https://picsum.photos/300/350?random=12" alt="Western Wear">
+        <h3>Western Wear</h3>
+        <p>₹2299</p>
+        <button class="add-cart"
+          data-name="Western Wear"
+          data-price="2299"
+          data-image="https://picsum.photos/300/350?random=12">
+          Add To Cart
+        </button>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Jewelry Collection -->
+  <section class="section" id="jewelry">
+
+    <h2>Jewelry Collection</h2>
+
+    <div class="gallery">
+
+      <div class="box">
+        <img src="https://picsum.photos/300/350?random=13" alt="Gold Ring">
+        <h3>Gold Ring</h3>
+        <p>₹2999</p>
+        <button class="add-cart"
+          data-name="Gold Ring"
+          data-price="2999"
+          data-image="https://picsum.photos/300/350?random=13">
+          Add To Cart
+        </button>
+      </div>
+
+      <div class="box">
+        <img src="https://picsum.photos/300/350?random=14" alt="Diamond Necklace">
+        <h3>Diamond Necklace</h3>
+        <p>₹4999</p>
+        <button class="add-cart"
+          data-name="Diamond Necklace"
+          data-price="4999"
+          data-image="https://picsum.photos/300/350?random=14">
+          Add To Cart
+        </button>
+      </div>
+
+      <div class="box">
+        <img src="https://picsum.photos/300/350?random=15" alt="Bracelet">
+        <h3>Bracelet</h3>
+        <p>₹1999</p>
+        <button class="add-cart"
+          data-name="Bracelet"
+          data-price="1999"
+          data-image="https://picsum.photos/300/350?random=15">
+          Add To Cart
+        </button>
+      </div>
+
+      <div class="box">
+        <img src="https://picsum.photos/300/350?random=16" alt="Pendant">
+        <h3>Pendant</h3>
+        <p>₹2599</p>
+        <button class="add-cart"
+          data-name="Pendant"
+          data-price="2599"
+          data-image="https://picsum.photos/300/350?random=16">
+          Add To Cart
+        </button>
+      </div>
+
+      <div class="box">
+        <img src="https://picsum.photos/300/350?random=17" alt="Earrings">
+        <h3>Earrings</h3>
+        <p>₹1799</p>
+        <button class="add-cart"
+          data-name="Earrings"
+          data-price="1799"
+          data-image="https://picsum.photos/300/350?random=17">
+          Add To Cart
+        </button>
+      </div>
+
+      <div class="box">
+        <img src="https://picsum.photos/300/350?random=18" alt="Watch">
+        <h3>Watch</h3>
+        <p>₹3499</p>
+        <button class="add-cart"
+          data-name="Watch"
+          data-price="3499"
+          data-image="https://picsum.photos/300/350?random=18">
+          Add To Cart
+        </button>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- API Products -->
+  <section class="section" id="products">
+    <h2>Trending Products</h2>
+    <div id="products-container" class="gallery"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+
+    <div class="footer-container">
+
+      <div class="footer-box">
+        <h2>Fashion Store</h2>
+        <p>
+          Premium Fashion For Men And Women.
+          Explore Trending Styles And Accessories.
+        </p>
+      </div>
+
+      <div class="footer-box">
+        <h3>Quick Links</h3>
+        <a href="#home">Home</a><br>
+        <a href="#men">Men</a><br>
+        <a href="#women">Women</a><br>
+        <a href="#jewelry">Jewelry</a>
+      </div>
+
+      <div class="footer-box">
+        <h3>Contact Us</h3>
+        <p>📍 Puducherry, India</p>
+        <p>📞 +91 9876543210</p>
+        <p>📧 fashionstore@gmail.com</p>
+      </div>
+
+      <div class="footer-box">
+        <h3>Follow Us</h3>
+        <p>📘 Facebook</p>
+        <p>📸 Instagram</p>
+        <p>🐦 Twitter</p>
+        <p>▶️ YouTube</p>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      <p>© 2026 Fashion Store. All Rights Reserved.</p>
+    </div>
+
+  </footer>
+
+  <script src="fashion.js"></script>
+
+</body>
+</html>
